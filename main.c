@@ -3,36 +3,56 @@
 #include "stack_array_function.h"
 
 int main(void) {
-  // 理解??
-
-  struct stack *s = (struct stack*)malloc(sizeof(struct stack));
   
-  createEmptyStack(s);
+  struct stack *s = (struct stack*)malloc(sizeof(struct stack));
+  // initialize top (index)
+  createStack(s);
 
   push(s, 10);
+  printfStack(s);
   push(s, 20);
+  printfStack(s);
   push(s, 30);
+  printfStack(s);
   push(s, 40);
+  printfStack(s);
   push(s, 50);
+  printfStack(s);
   push(s, 60);
+  printfStack(s);
   push(s, 70);
+  printfStack(s);
   push(s, 80);
+  printfStack(s);
   push(s, 90);
+  printfStack(s);
   push(s, 100);
-  //push(s, 110);
+  printfStack(s);
+  push(s, 110);
+  printfStack(s);
+  printf("\nDo pop().\n======================\n");
+  pop(s);
   printfStack(s);
   pop(s);
-  pop(s);
-  pop(s);
-  pop(s);
-  pop(s);
-  pop(s);
-  pop(s);
-  pop(s);
-  pop(s);
-  //pop(s);
   printfStack(s);
-
+  pop(s);
+  printfStack(s);
+  pop(s);
+  printfStack(s);
+  pop(s);
+  printfStack(s);
+  pop(s);
+  printfStack(s);
+  pop(s);
+  printfStack(s);
+  pop(s);
+  printfStack(s);
+  pop(s);
+  printfStack(s);
+  pop(s);
+  printfStack(s);
+  pop(s);
+  printfStack(s);
 
   return 0;
 }
